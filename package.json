@@ -1,0 +1,71 @@
+{
+  "name": "kadmin",
+  "version": "0.1.0",
+  "description": "koala admin view",
+  "main": "src/main.jsx",
+  "scripts": {
+    "postinstall": "npm run build",
+    "server": "node server.js",
+    "build": "webpack -p --config webpack.production.config.js",
+    "clean": "rm -f build/*.{js,ttf,eot,woff,woff2,svg}"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/taodev/kadmin.git"
+  },
+  "keywords": [
+    "admin",
+    "template",
+    "react"
+  ],
+  "author": "Mark Fayngersh",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/taodev/kadmin/issues"
+  },
+  "homepage": "https://github.com/taodev/kadmin",
+  "devDependencies": {
+    "coveralls": "^2.11.2",
+    "istanbul": "^0.3.7",
+    "istanbul-instrumenter-loader": "^0.1.2",
+    "mocha": "^2.5.3",
+    "phantomjs": "^1.9.16",
+    "react-hot-loader": "^1.2.3",
+    "webpack-dev-server": "^1.7.0"
+  },
+  "dependencies": {
+    "autoprefixer": "^6.0.2",
+    "axios": "^0.7.0",
+    "babel-core": "^5.4.7",
+    "babel-loader": "^5.1.3",
+    "base-64": "^0.1.0",
+    "bootstrap": "^3.3.5",
+    "bootstrap-social": "^4.9.1",
+    "bundle-loader": "^0.5.4",
+    "classnames": "^2.2.0",
+    "css-loader": "^0.18.0",
+    "express": "^4.12.3",
+    "extract-text-webpack-plugin": "^0.8.2",
+    "file-loader": "^0.8.4",
+    "flux": "^2.1.1",
+    "font-awesome": "^4.4.0",
+    "jquery": "^2.1.4",
+    "lazy": "^1.0.11",
+    "less": "^2.5.3",
+    "less-loader": "^2.2.1",
+    "node-sass": "^3.4.1",
+    "normalizr": "^1.1.0",
+    "nprogress": "^0.2.0",
+    "postcss-loader": "^0.6.0",
+    "postcss-nested": "^1.0.0",
+    "react": "^0.13.3",
+    "react-bootstrap": "0.25.2",
+    "react-modal": "^0.5.0",
+    "react-router": "^0.13.3",
+    "reflux": "^0.2.12",
+    "resource-api-utils": "^1.0.0",
+    "style-loader": "^0.12.3",
+    "url-loader": "^0.5.6",
+    "webpack": "^1.12.1"
+  }
+}
