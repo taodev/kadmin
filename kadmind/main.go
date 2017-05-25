@@ -7,6 +7,10 @@ import (
 )
 
 func main() {
+	// 设置静态目录
+	beego.SetStaticPath("/html", "html")
+	beego.SetStaticPath("/static", "html/static")
+
 	if beego.BConfig.RunMode == "dev" {
 		beego.BConfig.WebConfig.DirectoryIndex = true
 		beego.BConfig.WebConfig.StaticDir["/swagger"] = "swagger"
