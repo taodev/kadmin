@@ -17,14 +17,9 @@ func init() {
 	beego.Router("/", &controllers.IndexController{})
 
 	ns := beego.NewNamespace("/api/v1",
-		beego.NSNamespace("/object",
+		beego.NSNamespace("/auth",
 			beego.NSInclude(
-				&controllers.ObjectController{},
-			),
-		),
-		beego.NSNamespace("/api/user",
-			beego.NSInclude(
-				&controllers.UserController{},
+				&controllers.AuthController{},
 			),
 		),
 	)
